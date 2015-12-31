@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="fiximagetarget2" size="822.000000 1151.000000" />
-    <ImageTarget name="FixImageTarget" size="1234.000000 1889.000000" />
-    <ImageTarget name="TreeMarker" size="108.000000 162.000000" />
-    <ImageTarget name="SampleMarker" size="1024.000000 1024.000000" />
-  </Tracking>
-</QCARConfig>
