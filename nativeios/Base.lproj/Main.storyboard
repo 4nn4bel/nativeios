@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gya-lB-vMp">
+                                <rect key="frame" x="0.0" y="472" width="600" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITp-7J-HDy">
+                                        <rect key="frame" x="218" y="49" width="46" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybg-Wt-Aug">
+                                        <rect key="frame" x="380" y="49" width="46" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLa-8g-htn">
+                                        <rect key="frame" x="53" y="49" width="46" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iLa-8g-htn" firstAttribute="top" secondItem="gya-lB-vMp" secondAttribute="top" id="0e2-cm-uYv"/>
+                                    <constraint firstItem="ITp-7J-HDy" firstAttribute="width" secondItem="Ybg-Wt-Aug" secondAttribute="width" id="4V7-9r-YQb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ybg-Wt-Aug" secondAttribute="trailing" id="Bpg-nI-T8P"/>
+                                    <constraint firstItem="Ybg-Wt-Aug" firstAttribute="leading" secondItem="ITp-7J-HDy" secondAttribute="trailing" id="CGk-Ke-Hqv"/>
+                                    <constraint firstItem="iLa-8g-htn" firstAttribute="height" secondItem="ITp-7J-HDy" secondAttribute="height" id="D7V-Pu-QIW"/>
+                                    <constraint firstItem="ITp-7J-HDy" firstAttribute="leading" secondItem="iLa-8g-htn" secondAttribute="trailing" id="GIc-iT-aX4"/>
+                                    <constraint firstItem="Ybg-Wt-Aug" firstAttribute="top" secondItem="gya-lB-vMp" secondAttribute="top" id="LXE-4F-wxh"/>
+                                    <constraint firstItem="ITp-7J-HDy" firstAttribute="height" secondItem="Ybg-Wt-Aug" secondAttribute="height" id="QAM-OL-SKT"/>
+                                    <constraint firstItem="ITp-7J-HDy" firstAttribute="leading" secondItem="iLa-8g-htn" secondAttribute="trailing" id="Tzy-e8-uRs"/>
+                                    <constraint firstItem="iLa-8g-htn" firstAttribute="width" secondItem="ITp-7J-HDy" secondAttribute="width" id="cV6-ze-BvL"/>
+                                    <constraint firstItem="ITp-7J-HDy" firstAttribute="top" secondItem="gya-lB-vMp" secondAttribute="top" id="fZW-Nf-sho"/>
+                                    <constraint firstItem="Ybg-Wt-Aug" firstAttribute="leading" secondItem="ITp-7J-HDy" secondAttribute="trailing" id="hZ2-ot-Rac"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ybg-Wt-Aug" secondAttribute="bottom" id="l64-yU-4zg"/>
+                                    <constraint firstAttribute="bottom" secondItem="iLa-8g-htn" secondAttribute="bottom" id="lnT-r5-TbY"/>
+                                    <constraint firstItem="iLa-8g-htn" firstAttribute="leading" secondItem="gya-lB-vMp" secondAttribute="leading" id="rYr-9z-3RM"/>
+                                    <constraint firstAttribute="bottom" secondItem="ITp-7J-HDy" secondAttribute="bottom" id="ytw-sJ-29A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gya-lB-vMp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="03J-Ew-mrH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gya-lB-vMp" secondAttribute="bottom" id="JjK-Pg-AjT"/>
+                            <constraint firstAttribute="trailing" secondItem="gya-lB-vMp" secondAttribute="trailing" id="cyH-fb-Huh"/>
+                            <constraint firstItem="gya-lB-vMp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="450" id="jlc-bQ-WvI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="191" y="313"/>
         </scene>
     </scenes>
 </document>
